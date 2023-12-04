@@ -1,1 +1,15 @@
+on:
+  push:
+    branches:
+      - master
 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: '7amok4a github'
+        run: pwd
+
+      - name: '7amok4a github print'
+        run: echo matter
