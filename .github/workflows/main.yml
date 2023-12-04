@@ -8,10 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Folder names before'
-        run: ls
-
       - uses: actions/checkout@v3
 
-      - name: 'Folder names after'
-        run: ls
+      - name: 'Login Docker hub'
+        run: docker login --username ${{ secrets.DOCKER_NAME }} --password ${{ secrets.DOCKER_TOKEN }}
